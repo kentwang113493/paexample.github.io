@@ -1,0 +1,133 @@
+<html>
+<head>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<style>
+body {
+    color: #6A6A6A;
+    background-color: #F2F2F2;
+    word-wrap: break-word;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.7;
+    font-size: 14px;
+}
+.watchlist-container h2 {
+    padding: 0px 20px 10px 20px;
+}
+.container {
+    padding: 30px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: none;
+    border-top: none;
+    box-shadow: 1px 1px 4px #ccc;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.notification-type {
+    float: right;
+}
+.latest-update ul li {
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+    list-style: none;
+    border-bottom: 1px solid #F2F2F2;
+}
+.container {
+    border: 1px solid transparent;
+    border-radius: 8px;
+    margin: 0 auto;
+    max-width: 1440px;
+    min-width: 625px;
+    padding: 15px;
+}
+.navbar.navbar-default {
+    background-color: #646464;
+    font-family: 'Open Sans', serif;
+    margin-bottom: 30;
+    font-weight: 500;
+    box-shadow: 1px 1px 4px #ccc;
+    height: 50;
+}
+</style>
+</head>
+<body>
+<header id="masthead" class="site-header" role="banner">
+<nav class="navbar navbar-default " role="navigation">
+</nav><!-- .site-navigation -->
+</header>
+<div class="container">
+<div class="watchlist-container">
+<h2>Figure Watchlist (Past 7 Days)</h2>
+<div class="latest-update">
+<ul>
+<li class="notification" id="show-link-1"><a href="#"><span class="notification-type">Restock</span><strong>[Play-Asia]</strong> NENDOROID NO. 033 CHARACTER VOCAL SERIES 01: HATSUNE MIKU (RE-RUN)</a></li>
+<li class="show-frame"><iframe class="d-none" id="show-frame-1" src="" width="100%" height="600"></iframe></li>
+<li class="notification" id="show-link-2"><a href="#"><span class="notification-type">Restock</span><strong>[Play-Asia]</strong> ARTFX J PERSONA 5 1/8 SCALE PRE-PAINTED FIGURE: PROTAGONIST PHANTOM THIEF VER. (RE-RUN)</a></li>
+<li class="show-frame"><iframe class="d-none" id="show-frame-2" src="" width="100%" height="600"></iframe></li>
+<li class="notification" id="show-link-3"><a href="#"><span class="notification-type">Pre-order</span><strong>[Play-Asia]</strong> ATELIER RYZA EVER DARKNESS & THE SECRET HIDEOUT 1/7 SCALE PRE-PAINTED FIGURE: RYZA (REISALIN STOUT)</a></li>
+<li class="show-frame"><iframe class="d-none" id="show-frame-3" src="" width="100%" height="600"></iframe></li>
+<li class="notification" id="show-link-4"><a href="#"><span class="notification-type">Pre-order</span><strong>[Play-Asia]</strong> NENDOROID NO. 1194 DEMON SLAYER KIMETSU NO YAIBA: NEZUKO KAMADO
+</a></li>
+<li class="show-frame"><iframe class="d-none" id="show-frame-4" src="" width="100%" height="600"></iframe></li>
+</ul>
+</div>
+</div>
+</div><!-- .entry-content -->
+</div>
+</div>
+<script type="text/javascript">
+    $("#show-link-1 a").click(function () {
+        if($("#show-frame-1").hasClass("active")) {
+            $("#show-frame-1").addClass("d-none");
+            $("#show-frame-1").removeClass("active");
+            $("#show-frame-1").attr("src", "");
+        } else {
+            $("#show-frame-1").removeClass("d-none");
+            $("#show-frame-1").addClass("active");
+            $("#show-frame-1").attr("src", "https://www.play-asia.com/nendoroid-no-033-character-vocal-series-01-hatsune-miku-re-run/13/702faf");
+        }
+    });
+    $("#show-link-2 a").click(function () {
+        if($("#show-frame-2").hasClass("active")) {
+            $("#show-frame-2").addClass("d-none");
+            $("#show-frame-2").removeClass("active");
+            $("#show-frame-2").attr("src", "");
+        } else {
+            $("#show-frame-2").removeClass("d-none");
+            $("#show-frame-2").addClass("active");
+            $("#show-frame-2").attr("src", "https://www.play-asia.com/artfx-j-persona-5-18-scale-pre-painted-figure-protagonist-phanto/13/70b4r1");
+        }
+    });
+    $("#show-link-3 a").click(function () {
+        if($("#show-frame-3").hasClass("active")) {
+            $("#show-frame-3").addClass("d-none");
+            $("#show-frame-3").removeClass("active");
+            $("#show-frame-3").attr("src", "");
+        } else {
+            $("#show-frame-3").removeClass("d-none");
+            $("#show-frame-3").addClass("active");
+            $("#show-frame-3").attr("src", "https://www.play-asia.com/atelier-ryza-ever-darkness-the-secret-hideout-17-scale-pre-pain/13/70d25t");
+        }
+    });
+    $("#show-link-4 a").click(function () {
+        if($("#show-frame-4").hasClass("active")) {
+            $("#show-frame-4").addClass("d-none");
+            $("#show-frame-4").removeClass("active");
+            $("#show-frame-4").attr("src", "");
+        } else {
+            $("#show-frame-4").removeClass("d-none");
+            $("#show-frame-4").addClass("active");
+            $("#show-frame-4").attr("src", "https://www.play-asia.com/nendoroid-no-1194-demon-slayer-kimetsu-no-yaiba-nezuko-kamado/13/70czfp");
+        }
+    });
+</script>
+</body>
+</html>
